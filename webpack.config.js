@@ -24,7 +24,10 @@ module.exports = env => {
     resolve: {
       extensions: ['.tsx', '.ts', '.js'],
       alias: {
+        config: srcPath('config'),
+        models: srcPath('models'),
         routes: srcPath('routes'),
+        services: srcPath('services'),
         utils: srcPath('utils'),
       },
     },
@@ -32,6 +35,6 @@ module.exports = env => {
       filename: 'bundle.js',
       path: path.resolve(__dirname, 'dist'),
     },
-    plugins: [new CopyPlugin([{ from: 'src/views', to: 'views' }])],
+    plugins: [],
   };
 };

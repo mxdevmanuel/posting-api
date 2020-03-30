@@ -1,0 +1,3 @@
+--recurse
+--exclude='@.gitignore'
+--exclude=**/__mocks__/*

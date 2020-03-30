@@ -162,4 +162,11 @@ tags
 # Coc configuration directory
 .vim
 
-# End of https://www.gitignore.io/api/git,linux,vim,node
+### direnv ###
+.direnv
+.envrc
+
+### dotenv ###
+.env
+
+# End of https://www.gitignore.io/api/git,linux,vim,node,dotenv,direnv
